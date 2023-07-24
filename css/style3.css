@@ -1,0 +1,118 @@
+body{
+    background-color: #f5f5f5;
+}
+.arrow-up{
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    background-color: #0078ff;
+    color: #fff;
+    height: 40px;
+    width: 40px ;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+text-decoration: none;
+z-index: 999;
+}
+/* ------------------ */
+
+.navbar-brand,.nav-link{
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.navbar-nav .nav-link.active{
+    color: #fff;
+}
+.nav-link:hover,.navbar-brand:hover{
+    color: #fff;
+}
+.navbar li {
+    position: relative;
+    padding: 0 10px;
+}
+.navbar ul li a::after{
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    bottom: 0;
+    left: 15px;
+    height: 3px ;
+    width: 0;
+    visibility: hidden;
+    transition: all 0.4s ease-in-out;
+}
+.navbar a:hover::after,.navbar .active::after{
+    visibility: visible;
+    width: 60%;
+} 
+/* .bg-nav{
+    background-color: rgba(0, 119, 255, 0.7) !important;
+} */
+/* ---------------------------- */
+.main-section{
+    padding: 8rem 0;
+    background-image:linear-gradient(rgba(0, 119, 255, 0.7),rgba(0, 119, 255, 0.7)),url(../img/overlay-bg.jpg) ;
+background-position: center;
+    background-size: cover;
+}
+.text-bg{
+    color: rgba(255, 255, 255, 0.8);
+}
+/* ================= */
+.blog-single .post-box,.blog-single .post-comment,.blog-single .post-form,.post-search,.reant-post{
+    background-color: #fff;
+    padding: 48px;
+    margin-bottom: 3rem;
+}
+.imp{
+    border-left: 4px solid #0078ff;
+}
+.imp li {
+    margin-left: 15px ;
+}
+.imp1{
+    padding: 18px;
+    border-left: 4px solid #0078ff;
+    font-style: italic;
+    font-size: 1.25rem;
+}
+.post-title{
+    position: relative;
+}
+.post-title::after{
+    content: "";
+    position: absolute;
+    width: 15%;
+    height: 4px;
+    background-color: #0078ff;
+    left: 3px;
+    bottom: -10px;
+}
+.btn button{
+    border: none;
+    background-color: #0078ff;
+    padding: 15px 25px ;
+    
+}
+
+.search{
+    padding-left:15px ;
+    border-left: 4px solid #0078ff;
+}
+.reant-post .hov{
+    transition:all 0.4s ;
+}
+.reant-post .hov:hover{
+    color: #0078ff !important;
+}
+.bg-blue{
+    background-color: #0078ff ;
+    padding: 10px ; 
+    /* border-radius: 15px ; */
+}
+.bg-footer{
+    background-color: #0062d3;
+}
